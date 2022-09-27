@@ -27,7 +27,7 @@ public class LancerConfig {
 	
 	@Bean
 	public WebSecurityCustomizer share() {
-		return (Web)->Web.ignoring().antMatchers("/signup");
+		return (Web)->Web.ignoring().antMatchers("/api/signup");
 	}
 	
 	@Bean
@@ -48,7 +48,8 @@ public class LancerConfig {
 	
 	@Bean
 	public SecurityFilterChain safety(HttpSecurity hp) throws Exception {
-		hp.authorizeRequests().anyRequest().authenticated();
+		//hp.authorizeRequests().anyRequest().authenticated();
+		hp.authorizeRequests().antMatchers("/api/*").authenticated();
 		hp.csrf().disable();
 		hp.httpBasic();
 		hp.formLogin();
