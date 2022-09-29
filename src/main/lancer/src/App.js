@@ -15,6 +15,7 @@ import { Filterexp } from './Filterexp';
 import { Alter } from './Alter';
 import { Remove } from './Remove';
 import { Login } from './Login';
+import { Caro } from './Caro';
 
  
 
@@ -26,7 +27,9 @@ const App=()=> {
       <>
         <HashRouter>
       <Main/>
+      
         <Routes>
+           <Route exact path="/" element={<Caro/>}/>
            <Route exact path="/view" element={<Lists/>}/>
            <Route exact path="/fresh" element={<Create/>}/>
            <Route exact path="/short" element={<Filter/>}/>

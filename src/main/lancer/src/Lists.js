@@ -18,9 +18,9 @@ export const Lists=()=>{
     return(
         <>
         <div className="container mt-3">
-            <h1 className="text-center text-danger display-5">User's Details</h1>
+            <h1 className="text-center text-b;ack display-5">User's Details</h1>
             <div className="row justify-content-center">
-                <div className="col-lg-6 col-md-10 col-sm-12 p-2 shadow rounded-3">
+                <div className="col-lg-6 col-md-10 col-sm-12 p-5 shadow rounded-3" style={{backgroundColor:"rgb(227,227,227)"}}>
                     <div className="table-responsive">
                         <table className="table table-striped table-hover  text-nowrap">
                             <thead>

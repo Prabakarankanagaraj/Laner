@@ -25,13 +25,13 @@ export const Read=()=>{
          <div className="alert alert-primary text-center">
             <h1>User Details</h1>
             <div className="row justify-content-center">
-                <p>{read.lancerId}</p>
-                <p>{read.userName}</p>
-                <p>{read.skills}</p>
-                <p>{read.location}</p>
-                <p>{read.experience}</p>
-                <p>{read.commercial}</p>
-                <p>{read.previousProject}</p>
+                <p><label>ID         -</label>          {read.lancerId}</p>
+                <p><label>Username   -</label>          {read.userName}</p>
+                <p><label>Skills     -</label>          {read.skills}</p>
+                <p><label>Location   -</label>          {read.location}</p>
+                <p><label>Experience -</label>          {read.experience}</p>
+                <p><label>Salary     -</label>          {read.commercial}</p>
+                <p><label>Count      -</label>          {read.previousProject}</p>
 
             </div>
          </div>

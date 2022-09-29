@@ -9,10 +9,11 @@ export const Caro=()=>{
         <>
          <Carousel>
             <Carousel.Item>
-                <img className="d-block w-100 height-100px" src="pic1.jpeg">
+                <img className="d-block w-100"
+                 style={{height:'562px'}} src="pic1.avif">
                 </img>
                 <Carousel.Caption>
-                    <h1>Welcome to Lancer</h1>
+                    <h1 className="text-black display-3 text-center"><b>Welcome to Lancer</b></h1>
                     <Button className="btn btn-info" onClick={handleShow}>Help?</Button>
                     <Offcanvas show={show} onHide={handleClose}>
                         <Offcanvas.Header closeButton>
@@ -36,20 +37,22 @@ export const Caro=()=>{
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                 className="d-block w-100 height-100px"
-                 src="pic2.webp"
+                 className="d-block w-100"
+                 style={{height:'562px'}}
+                 src="pic2.avif"
                 />
                 <Carousel.Caption>
-                    <h1>Biggest Platform in the world for Programmers!</h1>
+                    <h1 className=" text-center">Biggest Platform in the world for Programmers!</h1>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                 className="d-block w-100 height-100px"
-                 src="pic3.webp"
+                 className="d-block w-100"
+                 style={{height:'562px'}}
+                 src="pic3.avif"
                 />
                 <Carousel.Caption>
-                    <h1>Make your project here and get a profit here!.</h1>
+                    <h1 className=" text-center">Make your project here and get a profit here!.</h1>
                 </Carousel.Caption>
                 <Carousel.Item/>
             </Carousel.Item>

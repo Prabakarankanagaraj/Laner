@@ -41,13 +41,14 @@ export const Login=()=>{
             </>
             :
             <>
-            <div className="container mt-3">
-            <h1 className="text-center text-danger display-3">Login Here</h1>
-            <button className="btn btn-primary float-end"  onClick={()=>{
+            <button className="btn btn-primary float-end me-5 mt-5"  onClick={()=>{
                 setSign(true)
             }}>New User's ? </button>
-            <div className="row justify-content-center">
-                <div className="col-lg-6 col-md-10 col-sm-12 shadow p-3 rounded-3">
+
+            <div className="container mt-3">
+           <h1 className="text-center text-black display-4"><b>Lancer</b></h1>
+            <div className="row justify-content-center mt-5">
+                <div className="col-lg-4 col-md-10 col-sm-12 shadow p-5 rounded-3 " style={{backgroundColor:"rgb(227,227,227)"}}>
                         <div className="form group">
                             <label>User Name:</label>
                             <input type="text" name="username" value={user.username} onChange={onCollect} placeholder="Enter Your User Name" className="form-control"/>
@@ -57,16 +58,15 @@ export const Login=()=>{
                             <input type="password" name="password" value={user.password} onChange={onCollect} placeholder="Enter Your Password" className="form-control"/>
                         </div>
                         <div className="mt-3 row justify-content-around">
-                            <button type="button" className="btn btn-outline-success col-2" onClick={onLogin}>
+                            <button type="button" className="btn btn-success col-2" onClick={onLogin}>
                                 <i class="bi bi-door-open-fill"></i>
                             </button>
-                            <button type="button" className="btn btn-outline-danger col-2" onClick={onCancel}>
+                            <button type="button" className="btn btn-danger col-2" onClick={onCancel}>
                                 <i class="bi bi-x-lg"></i>
                             </button>
                         </div>
-
-                </div>
-
+                    </div>
+                 
             </div>
 
          </div>

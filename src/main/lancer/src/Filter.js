@@ -5,12 +5,13 @@ import { onSubmitDelete } from "./Connect"
 export const Filter=(prop)=>{
     const navi=useNavigate()
     const[stocks,setStocks]=useState(prop.show)
+
     return(
         <>
         <div className="container mt-3">
             <h1 className="text-center text-danger display-5">List of user's</h1>
             <div className="row justify-content-center">
-                <div className="col-lg-6 col-md-10 col-sm-12 shadow p-5 rounded-3">
+                <div className="col-lg-6 col-md-10 col-sm-12 shadow p-5 rounded-3" style={{backgroundColor:"snow"}}>
                     {
                         typeof(stocks[0]==="string")?
                         <>
@@ -18,7 +19,7 @@ export const Filter=(prop)=>{
                             {
                                 stocks.map((str)=>(
                                     <div className="card p-5 shadow rounded-3">
-                                        <h1 className="card-title display-4">{str}</h1>
+                                        <h1 className="card-title">{str}</h1>
                                     </div>                                       
                                 ))
                             }
@@ -28,7 +29,7 @@ export const Filter=(prop)=>{
                         :
                         <>
                             <div className="table-responsive">
-                                        <table className="table table-hover table-nowrap">
+                                        <table className="table table-hover table-nowrap p-5" style={{backgroundColor:"snow"}}>
                                             <thead>
                                                 <tr>
                                                     <th>LancerId</th>

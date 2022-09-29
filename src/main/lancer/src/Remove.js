@@ -19,12 +19,12 @@ export const Remove=()=>{
           <div className="container mt-3">
             <h1 className="text-center text-danger display-3">Delete All TypesLike</h1>
             <div className="row justify-content-center">
-                <div className="col-lg-6 col-md-10 col-sm-12 shadow p-5">
+                <div className="col-lg-6 col-md-10 col-sm-12 shadow p-5 rounded-5" style={{backgroundColor:"rgb(227,227,227)"}}>
                     <div className="form group">
                         <input type="text" placeholder="Enter the word/Letters of skills" name="skills" value={remove.skills} onChange={onRemove} className="form-control"/>
                     </div>
                     <div className="row justify-content-around mt-3">
-                    <button className="btn btn-outline-success col-2" onClick={onTrash}>
+                    <button className="btn btn-success col-2" onClick={onTrash}>
                         <i class="bi bi-trash"></i>
                     </button>
                     </div>

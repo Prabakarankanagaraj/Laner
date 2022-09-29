@@ -47,25 +47,21 @@ const onReset=()=>{
     return(
         <>
           <div className="mt-3 container">
-            <h1 className="text-center text-danger display-5">Update your Details here</h1>
+            <h1 className="text-center text-black display-5">Update your Details here</h1>
             <div className="row justify-content-center">
-                <div className="col-lg-6 col-md-10 col-sm-12 shadow p-4 rounded-5">
-                    <div className="row mt-2 ">
-                        <div className="col-lg-6 col-10">
-                            <input type="text" name="userName" value={change.userName} onChange={onGather} placeholder="Your Name" className="form-control" />
-                        </div>
-                        <div className="col-lg-6 col-md-10">
-                            <input type="text" name="skills" value={change.skills} onChange={onGather} placeholder="Your Skills" className="form-control" />
-                        </div>
-                    </div>
+                <div className="col-lg-5 col-md-10 col-sm-12 shadow p-5 rounded-5" style={{backgroundColor:"rgb(227,227,227)"}}>
+                    <div className="row">
+                             <input type="text" name="userName" value={change.userName} onChange={onGather} placeholder="Your Name" className="form-control" />
+                      </div>
+                     <div className="row mt-2">
+                              <input type="text" name="skills" value={change.skills} onChange={onGather} placeholder="Your Skills" className="form-control" />
+                     </div>
                     <div className="row mt-2">
-                        <div className="col-lg-6 col-md-10">
-                            <input type="text" name="location" value={change.location} onChange={onGather} placeholder="Your Area" className="form-control" />
-                        </div>
-                        <div className="col-lg-6 col-md-10">
-                            <input type="text" name="experience" value={change.experience} onChange={onGather} placeholder="Your Experience" className="form-control" />
-                        </div>
+                             <input type="text" name="location" value={change.location} onChange={onGather} placeholder="Your Area" className="form-control" />
                     </div>
+                     <div className="row mt-2">
+                              <input type="text" name="experience" value={change.experience} onChange={onGather} placeholder="Your Experience" className="form-control" />
+                     </div>
                     <div className="row mt-2">            
                             <input type="text" name="commercial" value={change.commercial} onChange={onGather} placeholder="Your salary" className="form-control" />
                     </div>
@@ -74,10 +70,10 @@ const onReset=()=>{
                     </div>
 
                     <div className="row justify-content-around mt-3">
-                        <button className="btn btn-outline-success col-2" onClick={onAdd}>
+                        <button className="btn btn-success col-2" onClick={onAdd}>
                         <i class="bi bi-person-plus"></i> 
                         </button>
-                        <button className="btn btn-outline-danger col-2" onClick={onReset}>
+                        <button className="btn btn-danger col-2" onClick={onReset}>
                         <i class="bi bi-x-square-fill"></i>
                         </button> 
                     </div>

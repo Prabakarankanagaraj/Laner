@@ -37,9 +37,9 @@
         return(
             <>
               <div className="container mt-3">
-                <h1 className="text-center text-danger dispaly-3">New User's Register Here,</h1>
-                <div className="row justify-content-center">
-                    <div className="col-lg-6 col-md-10 col-sm-12 p-3 shadow rounded-3">
+                <h1 className="text-center text-black dispaly-3">Lancer</h1>
+                <div className="row justify-content-center mt-3">
+                    <div className="col-lg-6 col-md-10 col-sm-12 p-5 shadow rounded-3" style={{backgroundColor:"rgb(227,227,227)"}}>
                         <div className="form group">
                             <label>Full Name:</label>
                             <input type="text" name="empName" value={details.empName} onChange={onDetail} placeholder="Enter Your Full Name" className="form-control"/>

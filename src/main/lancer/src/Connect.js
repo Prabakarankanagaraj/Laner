@@ -76,13 +76,14 @@ export const onSubmitUpdateCondition=async(obj)=>{
 
 export const onSubmitFilterExperience=async(obj)=>{
     try{
-        if(obj.experience!==0){
-            const t=axios.get(`/api/byexperience/${obj.experience}`,{
+        if(obj!==0){
+            alert(obj)
+            const t=await axios.get(`/api/byexperience/${obj}`,{
                 headers:{
-                    "Authorization":` Basic ${sessionStorage.getItem("user")}`
+                    "Authorization":`Basic ${sessionStorage.getItem("user")}`
                 }
             })
-            return t
+             return t
         }
         else{
             return{"err":"Invalid Filter call"}
@@ -95,8 +96,8 @@ export const onSubmitFilterExperience=async(obj)=>{
 
 export const onSubmitFilterSalary=async(obj)=>{
     try{
-        if(obj.commercial!==0.0){
-            const t=await axios.get(`/api/bysalary/${obj.commercial}`,{
+        if(obj!==0.0){
+            const t=await axios.get(`/api/bysalary/${obj}`,{
                 headers:{
                     "Authorization":`Basic ${sessionStorage.getItem("user")}`
                 }
@@ -115,8 +116,8 @@ export const onSubmitFilterSalary=async(obj)=>{
 
 export const onSubmitFilterSkill=async(obj)=>{
     try{
-        if(obj.skills===""){
-            const t=await axios.get(`/api/byskills/${obj.skills}`,{
+        if(obj!==""){
+            const t=await axios.get(`/api/byskills/${obj}`,{
                 headers:{
                     "Authorization":`Basic ${sessionStorage.getItem("user")}`
                 }
@@ -135,7 +136,7 @@ export const onSubmitFilterSkill=async(obj)=>{
 
 export const onSubmitFilterTwo=async(obj)=>{
     try{
-        if(obj.skills===""&obj.experience!==0){
+        if(obj.skills!==""&obj.experience!==0){
             const t=await axios.get(`/api/bytwo/${obj.skills}/${obj.experience}`,{
                 headers:{
                     "Authorization":`Basic ${sessionStorage.getItem("user")}`
@@ -154,8 +155,8 @@ export const onSubmitFilterTwo=async(obj)=>{
 export const onSubmitFilterSkills=async(obj)=>{
     try{
 
-        if(obj.skills===""){
-            const t=await axios.get(`/api/bytech/${obj.skills}`,{
+        if(obj!==""){
+            const t=await axios.get(`/api/bytech/${obj}`,{
                 headers:{
                     "Authorization":` Basic ${sessionStorage.getItem("user")}`
                 }

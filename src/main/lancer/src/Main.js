@@ -10,9 +10,17 @@ export const Main=()=>{
     const handleClose=()=>setShow(false)
       return(
         <>
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="warning" expand="lg">
             <Container fluid>
-                <Navbar.Brand href="/view" className="text-danger">Lancer</Navbar.Brand>
+                <Navbar.Brand href="/view" className="text-danger">
+                <img
+                src="pic5.png"
+                width="35"
+                height="30"
+                className="d-inline-block align-top"
+                />    
+                    Lancer
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="fai" />
                     <Navbar.Collapse id="fai">
                         <Nav className="ms-auto">
@@ -49,9 +57,7 @@ export const Main=()=>{
                     </Navbar.Collapse>
            </Container>
         </Navbar>
-       <div className="mt-2">
-            <Caro/>
-       </div>
+        
          
         </>
     )
