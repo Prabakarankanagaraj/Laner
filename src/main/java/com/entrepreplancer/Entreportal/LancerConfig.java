@@ -1,6 +1,7 @@
 package com.entrepreplancer.Entreportal;
 
 import java.util.Collection;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +37,7 @@ public class LancerConfig {
 				.password("karan").roles("user").build();
 		UserDetails myUser2=User.withDefaultPasswordEncoder().username("sil")
 				.password("viya").roles("user").build();
-		Collection<UserDetails> myUsers=Stream.of(myUser1,myUser2).toList();
+		Collection<UserDetails> myUsers=Stream.of(myUser1,myUser2).collect(Collectors.toList());
 		return new InMemoryUserDetailsManager(myUsers);
 	}
 	
