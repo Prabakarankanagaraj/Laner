@@ -14,7 +14,7 @@ export const Main=()=>{
             <Container fluid>
                 <Navbar.Brand href="/view" className="text-danger">
                 <img
-                src="pic5.png"
+                src="pic5.jpg"
                 width="35"
                 height="30"
                 className="d-inline-block align-top"
@@ -36,7 +36,7 @@ export const Main=()=>{
                                 <NavDropdown.Item href="/#/filterExperience">Experience</NavDropdown.Item>
                              </NavDropdown>
                                 <Button variant="danger" onClick={handleShow}>
-                                    Notification<Badge bg="info">New</Badge>
+                                    Notification<Badge bg="info" className="ms-2">New</Badge>
                                 </Button>
                                 <Modal show={show} onHide={handleClose}>
                                     <Modal.Header closeButton>
