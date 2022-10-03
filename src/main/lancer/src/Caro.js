@@ -13,7 +13,7 @@ export const Caro=()=>{
                  style={{height:'562px'}} src="pic1.avif">
                 </img>
                 <Carousel.Caption>
-                    <h1 className="text-black display-3 text-center"><b>Welcome to Lancer</b></h1>
+                    <h1 className="text-black display-3 text-center" style={{fontFamily:"Fantasy"}}><b>Welcome to Lancer</b></h1>
                     <Button className="btn btn-info" onClick={handleShow}>Help?</Button>
                     <Offcanvas show={show} onHide={handleClose}>
                         <Offcanvas.Header closeButton>
@@ -42,7 +42,7 @@ export const Caro=()=>{
                  src="pic2.avif"
                 />
                 <Carousel.Caption>
-                    <h1 className=" text-center">Biggest Platform in the world for Programmers!</h1>
+                    <h1 className=" text-center" style={{fontFamily:"Fantasy"}}>Biggest Platform in the world for Programmers!</h1>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -52,7 +52,7 @@ export const Caro=()=>{
                  src="pic3.avif"
                 />
                 <Carousel.Caption>
-                    <h1 className=" text-center">Make your project here and get a profit here!.</h1>
+                    <h1 className="text-light text-center" style={{fontFamily:"Fantasy"}}>Make your project here and get a profit here!.</h1>
                 </Carousel.Caption>
                 <Carousel.Item/>
             </Carousel.Item>

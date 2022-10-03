@@ -43,7 +43,7 @@ export const Create=()=>{
     return(
         <>
          <div className="container mt-3">
-            <h1 className="text-center text-dark">Register Page</h1>
+            <h1 className="text-center text-dark" style={{fontFamily:"Times New Roman"}}>Register Page</h1>
             <div className="row justify-content-center">
                 <div className="col-lg-6 col-md-10 col-sm-12 p-5 shadow rounded-5" style={{backgroundColor:"rgb(227,227,227)"}}>
                    <div className="row">

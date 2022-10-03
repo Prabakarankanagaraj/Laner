@@ -9,7 +9,7 @@ export const Filter=(prop)=>{
     return(
         <>
         <div className="container mt-3">
-            <h1 className="text-center text-danger display-5">List of user's</h1>
+            <h1 className="text-center text-danger display-5" style={{fontFamily:"Times New Roman"}}>List of user's</h1>
             <div className="row justify-content-center">
                 <div className="col-lg-6 col-md-10 col-sm-12 shadow p-5 rounded-3" style={{backgroundColor:"snow"}}>
                     {

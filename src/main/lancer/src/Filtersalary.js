@@ -97,7 +97,7 @@ export const Filtersalary=()=>{
                 :
                 <>
                   <div className="container mt-3">
-            <h1 className="text-center text-black display-4"><b>By Filtering salary</b> </h1>
+            <h1 className="text-center text-black display-4" style={{fontFamily:"Times New Roman"}}><b>By Filtering salary</b> </h1>
             <div className="row justify-content-center">
                 <div className="col-lg-6 col-md-10 col-sm-12 shadow p-5 rounded-3" style={{backgroundColor:"rgb(227,227,227)"}}>
                     <div className="form group">

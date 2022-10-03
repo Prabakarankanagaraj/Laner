@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Badge, Button, Container, Modal, Nav, Navbar, NavDropdown } from "react-bootstrap"
+import { Badge, Button, Container, Form, Modal, Nav, Navbar, NavDropdown } from "react-bootstrap"
 import { Caro } from "./Caro"
 import { onSubmitDelete, onSubmitLogout } from "./Connect"
 
@@ -12,12 +12,12 @@ export const Main=()=>{
         <>
         <Navbar bg="warning" expand="lg">
             <Container fluid>
-                <Navbar.Brand href="/view" className="text-danger">
+                <Navbar.Brand href="/view" className="text-danger ms-2">
                 <img
                 src="pic5.jpg"
                 width="35"
                 height="30"
-                className="d-inline-block align-top"
+                className="d-inline-block align-top me-2"
                 />    
                     Lancer
                 </Navbar.Brand>
@@ -47,6 +47,7 @@ export const Main=()=>{
                                         <Button variant="secondary" onClick={handleClose} >Close</Button>
                                     </Modal.Footer>
                                 </Modal>
+                                
                             <button className="btn btn-outline-danger rounded-5 ms-2 " onClick={async()=>{
                                 await onSubmitLogout()
                                 window.location.assign("/")
